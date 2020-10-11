@@ -9,18 +9,6 @@ html, body {
     margin-right: 20%;
 }
 
-.table-column-names {
-    width: 965px;
-    height: 65px;
-    font-family: Helvetica;
-    font-weight: bold;
-    color: #022737;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    /* margin-top: 50px; */
-}
-
 h1 {
     font-family: BerkleyStd;
     font-size: 42px;
@@ -228,52 +216,7 @@ p {
         color: #505050;
       }
     
-    /* table css */
-    .table-column-names {
-        display: none;
-    }
-
-    .rectangle-dark {
-        padding-top: 2%;
-        width: 315px;
-        height: 190px;
-        background-color: #f4f3f3;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .rectangle-light {
-        padding-top: 2%;
-        width: 315px;
-        height: 190px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }    
-
-    .text-field-table {
-        margin-top: 12px;
-        width: 130px;
-        height: 40px;
-        margin-left: 22px;
-        float: left;
-        border: solid 1px #bfbfbf;
-        background-color: #ffffff;
-    }
-
-    .column-name-mobile-price{
-        width: 90%;
-    height: 24px;
-    font-family: Helvetica;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1x;
-    letter-spacing: normal;
-    color: #505050;
-    }
+    
     /* button container */
     .btn-container {
         margin-top: 10%;

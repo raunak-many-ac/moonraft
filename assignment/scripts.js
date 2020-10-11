@@ -100,14 +100,16 @@ function populate_Portfolio() {
                 prc_per_unit.className = "price-per-unit"
 
                 var input_field_div = document.createElement('div');
-                var price_per_unit = document.createElement('div');
-                price_per_unit.innerText = "Price Per Unit";
-                price_per_unit.className = "column-name-mobile-price";
+                input_field_div.className = "input_field_div";
+
+                var percentage_text = document.createElement('div');
+                percentage_text.innerText = "Percentage";
+                percentage_text.className = "column-name-mobile-price";
 
                 var input_field = document.createElement('input');
-                input_field.className = "text-field-table";
+                input_field.className = "input_field";
 
-                input_field_div.appendChild(price_per_unit);
+                input_field_div.appendChild(percentage_text);
                 input_field_div.appendChild(input_field);
 
                 newdiv.appendChild(invest_opt_div);
@@ -141,13 +143,23 @@ function populate_potfolio_builder() {
                 prc_per_unit.innerText = portfolio_builder[i].price_per_unit;
                 prc_per_unit.className = "price-per-unit"
 
+                var input_field_div = document.createElement('div');
+                input_field_div.className = "input_field_div";
+
+                var percentage_text = document.createElement('div');
+                percentage_text.innerText = "Percentage";
+                percentage_text.className = "column-name-mobile-price";
+
                 var input_field = document.createElement('input');
-                input_field.className = "text-field-table";
+                input_field.className = "input_field";
+
+                input_field_div.appendChild(percentage_text);
+                input_field_div.appendChild(input_field);
 
                 newdiv.appendChild(invest_opt_div);
                 newdiv.appendChild(avail_bal);
                 newdiv.appendChild(prc_per_unit);
-                newdiv.appendChild(input_field);
+                newdiv.appendChild(input_field_div);
 
                 if (i % 2 == 0) newdiv.className = "rectangle-dark";
                 else newdiv.className = "rectangle-light";
@@ -176,13 +188,23 @@ function populate_valueDrivenInvestments() {
                 prc_per_unit.innerText = value_driven_investments[i].price_per_unit;
                 prc_per_unit.className = "price-per-unit"
 
+                var input_field_div = document.createElement('div');
+                input_field_div.className = "input_field_div";
+
+                var percentage_text = document.createElement('div');
+                percentage_text.innerText = "Percentage";
+                percentage_text.className = "column-name-mobile-price";
+
                 var input_field = document.createElement('input');
-                input_field.className = "text-field-table";
+                input_field.className = "input_field";
+
+                input_field_div.appendChild(percentage_text);
+                input_field_div.appendChild(input_field);
 
                 newdiv.appendChild(invest_opt_div);
                 newdiv.appendChild(avail_bal);
                 newdiv.appendChild(prc_per_unit);
-                newdiv.appendChild(input_field);
+                newdiv.appendChild(input_field_div);
 
                 if (i % 2 == 0) newdiv.className = "rectangle-dark";
                 else newdiv.className = "rectangle-light";

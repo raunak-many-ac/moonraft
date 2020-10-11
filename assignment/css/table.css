@@ -1,4 +1,16 @@
-.table-heading-text{
+.table-column-names {
+        width: 965px;
+        height: 65px;
+        font-family: Helvetica;
+        font-weight: bold;
+        color: #022737;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 50px; */
+}
+
+.table-heading-text {
         font-family: Berkeley;
         font-size: 24px;
         font-weight: normal;
@@ -6,58 +18,134 @@
         font-style: normal;
         /* margin-bottom: 20px; */
         /* letter-spacing: 0.5px;*/
-        padding-bottom: 10px; 
+        padding-bottom: 10px;
         padding-left: 29px;
         line-height: 80px;
         color: #022737;
         display: inline;
-    }
-    
-    .rectangle-dark {
-        width: 965px;
+}
+
+.rectangle-dark {
+        width: 1000px;
         height: 60px;
         background-color: #f4f3f3;
         align-items: center;
         display: flex;
-    }
-    
-    .investment-options {
+}
+
+.investment-options {
         color: #006778;
         margin-left: 3%;
         width: 25%;
         font-family: Helvetica;
-    }
-    
-    .available-balance {
+        text-decoration: underline;
+}
+
+.available-balance {
         text-align: center;
         width: 25%;
         font-family: Helvetica;
-    }
-    
-    .price-per-unit {
+}
+
+.price-per-unit {
         text-align: center;
         width: 25%;
         font-family: Helvetica;
-    }
-    
-    .rectangle-light {
-        width: 965px;
+}
+
+.rectangle-light {
+        width: 1000px;
         height: 60px;
         align-items: center;
         display: flex;
-    }
-    
-    .text-field-table {
-        margin-top: 12px;
+}
+
+.input_field_div{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 100px;
+}
+
+.input_field {
+        /* margin-top: 12px;
         margin-bottom: 10px;
-        margin-left: 10%;
+        margin-left: 10%; */
         width: 100px;
         height: 40px;
         border: solid 1px #bfbfbf;
         background-color: #ffffff;
-        width: 10%;
-    }
-    
-    .column-name-mobile-price{
+        /* width: 10%; */
+}
+
+.column-name-mobile-price {
         display: none;
-    }
+}
+
+@media only screen and (max-width: 767px) {
+        .table-column-names {
+                display: none;
+        }
+
+        .rectangle-dark {
+                padding-top: 2%;
+                width: 315px;
+                height: 190px;
+                background-color: #f4f3f3;
+                display: block;
+                flex-direction: column;
+                
+                justify-content: space-between;
+        }
+
+        .rectangle-light {
+                padding-top: 2%;
+                width: 315px;
+                height: 190px;
+                display: block;
+                flex-direction: column;
+                justify-content: space-between;
+        }
+
+        .investment-options {
+                width: auto;
+                display: inline;
+                font-family: Helvetica;
+                margin-left: 20px;
+
+        }
+
+        .input_field_div{
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 0px;
+                float: left;
+                margin-left: 20px;
+        }
+
+        .input_field {
+                margin-top: 1px;
+                margin-bottom: 10px;
+                width: 130px;
+                height: 40px;
+                border: solid 1px #bfbfbf;
+                background-color: #ffffff;
+        }
+
+        .column-name-mobile-price {
+                display: inline;
+                visibility: visible;
+                height: auto;
+                font-family: Helvetica;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 20px;
+                letter-spacing: normal;
+                color: #505050;
+        }
+}
