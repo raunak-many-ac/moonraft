@@ -99,13 +99,21 @@ function populate_Portfolio() {
                 prc_per_unit.innerText = portfolio_solutions[i].price_per_unit;
                 prc_per_unit.className = "price-per-unit"
 
+                var input_field_div = document.createElement('div');
+                var price_per_unit = document.createElement('div');
+                price_per_unit.innerText = "Price Per Unit";
+                price_per_unit.className = "column-name-mobile-price";
+
                 var input_field = document.createElement('input');
                 input_field.className = "text-field-table";
+
+                input_field_div.appendChild(price_per_unit);
+                input_field_div.appendChild(input_field);
 
                 newdiv.appendChild(invest_opt_div);
                 newdiv.appendChild(avail_bal);
                 newdiv.appendChild(prc_per_unit);
-                newdiv.appendChild(input_field);
+                newdiv.appendChild(input_field_div);
 
                 if (i % 2 == 0) newdiv.className = "rectangle-dark";
                 else newdiv.className = "rectangle-light";

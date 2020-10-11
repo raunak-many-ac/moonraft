@@ -197,6 +197,10 @@ p {
     width: 10%;
 }
 
+.column-name-mobile-price{
+    display: none;
+}
+
 /* button css */
 .btn-container {
     margin-top: 10%;
@@ -216,12 +220,14 @@ p {
 .white-text {
     color: #ffffff;
     font-weight: bold;
+    font-family: Helvetica;
 }
 
 .blue-text {
     color: #006778;
     font-size: 16px;
     font-weight: bold;
+    font-family: Helvetica;
 }
 
 .cancel-btn {
@@ -306,22 +312,30 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    .investment-options {
-        color: #006778;
-        display: inline;
-    }
+    }    
 
     .text-field-table {
         margin-top: 12px;
-        width: 40%;
+        width: 130px;
         height: 40px;
+        margin-left: 22px;
         float: left;
         border: solid 1px #bfbfbf;
         background-color: #ffffff;
     }
 
+    .column-name-mobile-price{
+        width: 90%;
+    height: 24px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1x;
+    letter-spacing: normal;
+    color: #505050;
+    }
     /* button container */
     .btn-container {
         margin-top: 10%;
@@ -342,6 +356,4 @@ p {
         width: 100%;
         height: 50px;
     }
-
-    /* footer */
 }

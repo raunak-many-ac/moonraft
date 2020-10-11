@@ -24,6 +24,7 @@
         line-height: normal;
         letter-spacing: 0.5px;
         color: #ffffff;
+        opacity: 0.5;
 }
 
 .top-text {
@@ -37,6 +38,7 @@
 .top-icons {
         vertical-align: middle;
         margin-left: 2%;
+
         /* margin-right: 20%; */
 }
 
@@ -124,6 +126,15 @@ span {
         width: 100%;
 }
 
+.vanguard-char{
+        color: #006778;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Helvetica;
+        margin-left: 2px;
+
+}
+
 .rectangle-top-container {
         margin-left: 10%;
 }
@@ -137,6 +148,14 @@ span {
 @media only screen and (max-width: 767px){
         nav ul{
                 display: none;
+        }
+
+        .top-text {
+                border-radius: 10px;
+                margin-left: 22px;
+                /* padding-left: 20%; */
+                width: 236px;
+                vertical-align: middle;
         }
 
 }
