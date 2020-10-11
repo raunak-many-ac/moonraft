@@ -4,17 +4,17 @@ const portfolio_solutions = [{
         price_per_unit: "$23.2"
 },
 {
-        investment_options: "Conservative growth",
+        investment_options: "Moderate growth",
         available_balance: "$1,115,125.35",
         price_per_unit: "$23.2"
 },
 {
-        investment_options: "Conservative growth",
+        investment_options: "Gift Preservation",
         available_balance: "$1,115,125.35",
         price_per_unit: "$23.2"
 },
 {
-        investment_options: "Conservative growth",
+        investment_options: "Growth",
         available_balance: "$1,115,125.35",
         price_per_unit: "$23.2"
 }];

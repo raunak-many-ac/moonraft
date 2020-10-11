@@ -3,10 +3,7 @@ html, body {
     overflow-x: hidden;
 }
 
-
-
 /* main container */
-
 .main-container {
     margin-left: 10%;
     margin-right: 20%;
@@ -14,13 +11,14 @@ html, body {
 
 .table-column-names {
     width: 965px;
-    height: 60px;
-    font-family: HelveticaNeue;
+    height: 65px;
+    font-family: Helvetica;
     font-weight: bold;
     color: #022737;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    /* margin-top: 50px; */
 }
 
 h1 {
@@ -139,16 +137,20 @@ p {
 
 /* table css */
 
-/* h3 {
-    font-family: BerkeleyStd;
+.table-heading-text{
+    font-family: Berkeley;
     font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    letter-spacing: 0.5px;
+    /* margin-bottom: 20px; */
+    /* letter-spacing: 0.5px;*/
+    padding-bottom: 10px; 
+    padding-left: 29px;
+    line-height: 80px;
     color: #022737;
     display: inline;
-} */
+}
 
 .rectangle-dark {
     width: 965px;
@@ -162,16 +164,19 @@ p {
     color: #006778;
     margin-left: 3%;
     width: 25%;
+    font-family: Helvetica;
 }
 
 .available-balance {
     text-align: center;
     width: 25%;
+    font-family: Helvetica;
 }
 
 .price-per-unit {
     text-align: center;
     width: 25%;
+    font-family: Helvetica;
 }
 
 .rectangle-light {
@@ -193,7 +198,6 @@ p {
 }
 
 /* button css */
-
 .btn-container {
     margin-top: 10%;
     width: 100%;
@@ -237,9 +241,11 @@ p {
         margin-left: 22px;
         width: 70%;
     }
+    
     .top-icons {
         vertical-align: middle;
     }
+
     .need-assistance {
         display: none;
     }
@@ -282,6 +288,7 @@ p {
     .table-column-names {
         display: none;
     }
+
     .rectangle-dark {
         padding-top: 2%;
         width: 315px;
@@ -291,6 +298,7 @@ p {
         flex-direction: column;
         justify-content: space-between;
     }
+
     .rectangle-light {
         padding-top: 2%;
         width: 315px;
@@ -299,10 +307,12 @@ p {
         flex-direction: column;
         justify-content: space-between;
     }
+
     .investment-options {
         color: #006778;
         display: inline;
     }
+
     .text-field-table {
         margin-top: 12px;
         width: 40%;
@@ -311,6 +321,7 @@ p {
         border: solid 1px #bfbfbf;
         background-color: #ffffff;
     }
+
     /* button container */
     .btn-container {
         margin-top: 10%;
@@ -319,15 +330,18 @@ p {
         flex-direction: column;
         align-items: center;
     }
+
     .save-btn {
         width: 100%;
         height: 50px;
         float: none;
         margin-top: 3%;
     }
+
     .cancel-btn {
         width: 100%;
         height: 50px;
     }
+
     /* footer */
 }
