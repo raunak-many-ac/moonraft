@@ -4,7 +4,9 @@
 <head>
     <title>W3.CSS Template</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel = "stylesheet" href= "./css/footer.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/top.css">
+
 </head>
 
 <body>
@@ -33,13 +35,19 @@
 
     <nav>
         <img src="assets/logo.png" width="143" height="60">
+
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>Feedback</li>
+            <li>
+                ACCOUNT SUMMARY
+            </li>
+            <li>GRANTS</li>
+            <li>CONTRIBUTIONS</li>
+            <li>INVESTMENTS</li>
+            <li>RESOURCES</li>
+            <li>MY ACCOUNT</li>
+            <div class="nav-selected"></div>
         </ul>
+
     </nav>
 
     <div class="rectangle-top-dark">
@@ -49,7 +57,7 @@
             <span class="blue-text"><a href="#">Vanguard Charitable.</a></span>
         </div>
     </div>
-    
+
     <div class="Line"></div>
 
     <!-- main container -->
@@ -87,9 +95,9 @@
         <hr>
         <div class="table-column-names">
             <div style="margin-left: 20px;">Investment Options</div>
-            <div>Available Balance<p>as of 10/29/2018</p>
+            <div>Available Balance<p class = "date">as of 10/29/2018</p>
             </div>
-            <div>Price per Unit<p>as of 10/29/2018</p>
+            <div>Price per Unit<p class = "date">as of 10/29/2018</p>
             </div>
             <div>Percentage</div>
         </div>
@@ -136,26 +144,26 @@
     <!-- Footer -->
     <footer class="footer-elements">
         <div>
-            <img src="assets/logo_white.png" width="143" height="60" class= "white-logo">
-            <div class = "footer-icons">
-                <img src="assets/facebook.svg" width = "32px" height = "32px" >  
-                <img src="assets/facebook.svg" width = "32px" height = "32px" class = "social-media-icons">   
-                <img src="assets/facebook.svg" width = "32px" height = "32px" class = "social-media-icons">   
-                <img src="assets/facebook.svg" width = "32px" height = "32px" class = "social-media-icons">   
-                <img src="assets/facebook.svg" width = "32px" height = "32px" class = "social-media-icons">                   
+            <img src="assets/logo_white.png" width="143" height="60" class="white-logo">
+            <div class="footer-icons">
+                <img src="assets/facebook.svg" width="32px" height="32px">
+                <img src="assets/facebook.svg" width="32px" height="32px" class="social-media-icons">
+                <img src="assets/facebook.svg" width="32px" height="32px" class="social-media-icons">
+                <img src="assets/twitter.svg" width="32px" height="32px" class="social-media-icons">
+                <img src="assets/facebook.svg" width="32px" height="32px" class="social-media-icons">
             </div>
-            <p class= "Vanguard-Char">© 2018 Vanguard Charitable Endowment Program</p>
+            <p class="Vanguard-Char">© 2018 Vanguard Charitable Endowment Program</p>
         </div>
 
         <div class="footer-2nd">
-            <div class = "column">
+            <div class="column">
                 <a class="footer-text-normal">About Us<a>
                 <a class="footer-text-normal">Career Opportunities</a>
                 <a class="footer-text-normal">Legal disclosure</a>
                 <a class="footer-text-normal">Policies and guidelines</a>
                 <a class="footer-text-normal">User agreement</a>
             </div>
-            <div class = "column">
+            <div class="column">
                 <a class="footer-text-normal">Contact Us</a>
                 <a class="footer-text-normal">Forms</a>
                 <a class="footer-text-normal">Privacy Policy</a>
@@ -165,8 +173,12 @@
         </div>
 
         <div>
-            <p class = "Subscribe-to-our-New">Subscribe to our news letter</p>
-            <input class="preset-name" placeholder="Enter Your Name Here">
+            <p class="Subscribe-to-our-New">Subscribe to our news letter</p>
+            <div>
+                <input class="feedback-form" placeholder="Enter Your Name Here">
+                <!-- <button ><img src="assets/group-4.png" ></button> -->
+                <img src="assets/group-4.png" class="feedback-button" width="40px" height="40px">
+            </div>
         </div>
     </footer>
 

@@ -3,100 +3,7 @@ html, body {
     overflow-x: hidden;
 }
 
-.top-bar {
-    background-color: #022737;
-    width: 100%;
-    height: 40px;
-}
 
-.top-bar-container {
-    margin-right: 14%;
-    text-align: center;
-}
-
-.need-assistance {
-    margin-left: 58%;
-    vertical-align: middle;
-    width: 105px;
-    height: 14px;
-    font-family: HelveticaNeue;
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    color: #ffffff;
-}
-
-.top-text {
-    border-radius: 10px;
-    margin-left: 4%;
-    padding-left: 20%;
-    width: 0px;
-    vertical-align: middle;
-}
-
-.top-icons {
-    vertical-align: middle;
-    margin-left: 1%;
-    /* margin-right: 20%; */
-}
-
-nav {
-    margin-left: 10%;
-    margin-right: 20%;
-    padding: 6px;
-}
-
-nav ul {
-    float: right;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 20%;
-}
-
-nav ul li {
-    display: inline-block;
-    align-items: center;
-    margin-left: 20%;
-}
-
-a {
-    width: 122px;
-    height: 16px;
-    font-family: Helvetica;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: condensed;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    color: #006778;
-}
-
-.rectangle-top-dark {
-    width: 100%;
-    height: 44px;
-    background-color: #f4f3f3;
-    align-items: center;
-    display: flex;
-}
-
-span {
-    width: 100%;
-}
-
-.rectangle-top-container {
-    margin-left: 10%;
-}
-
-.Line {
-    width: 100%;
-    height: 1.5px;
-    background-color: #006778;
-}
 
 /* main container */
 
@@ -143,7 +50,7 @@ h1 {
 .normal-text {
     width: 90%;
     height: 24px;
-    font-family: HelveticaNeue;
+    font-family: Helvetica;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -309,6 +216,7 @@ p {
 
 .blue-text {
     color: #006778;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -320,8 +228,6 @@ p {
     text-decoration-color: #e6e1e1;
     border-radius: 5%;
 }
-
-/* footer */
 
 
 
@@ -424,16 +330,4 @@ p {
         height: 50px;
     }
     /* footer */
-    .footer-elements {
-        background-color: #022737;
-        width: 100%;
-        height: 90%;
-        padding-left: 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-elements div:nth-child(3) {
-        padding-right: 0%;
-    }
 }

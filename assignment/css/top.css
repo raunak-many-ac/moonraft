@@ -1,0 +1,142 @@
+.top-bar {
+        background-color: #022737;
+        width: 100%;
+        height: 40px;
+        
+}
+
+.top-bar-container {
+        margin-right: 2%;
+        text-align: center;
+        padding-top: 8px;       
+}
+
+.need-assistance {
+        margin-left: 58%;
+        vertical-align: middle;
+        width: 105px;
+        height: 14px;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: lighter;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+}
+
+.top-text {
+        border-radius: 10px;
+        margin-left: 4%;
+        padding-left: 20%;
+        width: 0px;
+        vertical-align: middle;
+}
+
+.top-icons {
+        vertical-align: middle;
+        margin-left: 2%;
+        /* margin-right: 20%; */
+}
+
+nav {
+        margin-left: 10%;
+        /* margin-right: 20%; */
+        padding: 6px;
+}
+
+.nav-options{
+        margin-top: 100px;
+        height: 100%;
+        /* margin-bottom: 20px; */
+        background-color: #006778;
+}
+
+nav ul {
+        display: inline;
+        float: right;
+        margin-right: 30px;
+        /* margin-bottom: 10px; */
+        align-items: center;
+        /* padding-left: 90px; */
+
+}
+
+nav ul li {
+        display: inline;
+        margin-left: 48px;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: 2.5;
+        letter-spacing: 0.5px;
+        color: #022737;
+        font-family: Helvetica;
+}
+
+.nav-selected{
+        width: 100px;
+        height: 5px;
+        /* margin-right: 10px; */
+        margin-left: 100px;
+        background-color: #006778;
+}
+
+a {
+        width: 122px;
+        height: 16px;
+        font-family: Helvetica;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        color: #006778;
+}
+
+.date{
+        width: auto;
+    height: 24px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0px;
+    letter-spacing: normal;
+    color: #505050;
+}
+
+.rectangle-top-dark {
+        width: 100%;
+        height: auto;
+        min-height: 44px;
+        background-color: #f4f3f3;
+        align-items: center;
+        display: flex;
+}
+
+
+span {
+        width: 100%;
+}
+
+.rectangle-top-container {
+        margin-left: 10%;
+}
+
+.Line {
+        width: 100%;
+        height: 1.5px;
+        background-color: #006778;
+}
+
+@media only screen and (max-width: 767px){
+        nav ul{
+                display: none;
+        }
+
+}
