@@ -206,6 +206,3 @@ function populate_valueDrivenInvestments() {
 
         val_drvn_invst.appendChild(newdiv);
 }
-
-
-

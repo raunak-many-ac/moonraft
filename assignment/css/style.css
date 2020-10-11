@@ -1,10 +1,15 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .top-bar {
     background-color: #022737;
     width: 100%;
     height: 40px;
 }
 
-.top-bar-container{
+.top-bar-container {
     margin-right: 14%;
     text-align: center;
 }
@@ -12,7 +17,16 @@
 .need-assistance {
     margin-left: 58%;
     vertical-align: middle;
-    color: grey;
+    width: 105px;
+    height: 14px;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #ffffff;
 }
 
 .top-text {
@@ -29,50 +43,60 @@
     /* margin-right: 20%; */
 }
 
+nav {
+    margin-left: 10%;
+    margin-right: 20%;
+    padding: 6px;
+}
+
 nav ul {
     float: right;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 20%;
-    
 }
 
 nav ul li {
     display: inline-block;
-    line-height: 80px;
     align-items: center;
     margin-left: 20%;
 }
 
-nav ul li a {
+a {
     width: 122px;
     height: 16px;
-    font-family: HelveticaNeue;
+    font-family: Helvetica;
     font-size: 16px;
     font-weight: bold;
     font-stretch: condensed;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.5px;
-    color: #022737;
+    color: #006778;
 }
 
 .rectangle-top-dark {
     width: 100%;
-    height: 60px;
+    height: 44px;
     background-color: #f4f3f3;
     align-items: center;
     display: flex;
 }
 
-span{
+span {
     width: 100%;
 }
-.rectangle-top-container{
-    margin-left: 10%;    
+
+.rectangle-top-container {
+    margin-left: 10%;
 }
 
+.Line {
+    width: 100%;
+    height: 1.5px;
+    background-color: #006778;
+}
 
 /* main container */
 
@@ -93,21 +117,46 @@ span{
 }
 
 h1 {
-    font-family: BerkeleyStd;
+    font-family: BerkleyStd;
     font-size: 42px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.14;
     letter-spacing: 0.5px;
     color: #022737;
-    display: inline;
+    margin-top: 50px;
+}
+
+.A1050919 {
+    width: 110px;
+    height: 28px;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #505050;
 }
 
 .normal-text {
     width: 90%;
     height: 24px;
     font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #505050;
+}
+
+.Lorem-ipsum-dolor-si {
+    width: 963px;
+    height: 96px;
+    font-family: Helvetica;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -133,7 +182,20 @@ h1 {
 p {
     width: 100%;
     /* height: 96px; */
-    font-family: HelveticaNeue;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.The-Church-Fund {
+    width: 125px;
+    height: 24px;
+    font-family: Helvetica;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -141,20 +203,36 @@ p {
     line-height: 1.5;
     letter-spacing: normal;
     color: #505050;
-}
+  }
 
 .preset-name {
-    margin-top: 7px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 49px;
     width: 316px;
     height: 40px;
     border: solid 1px #bfbfbf;
     background-color: #ffffff;
+    padding-left: 20px;
+}
+
+.Preset-Allocation {
+    width: 170px;
+    height: 30px;
+    object-fit: contain;
+    font-family: BerkeleyStd;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    color: #022737;
+    margin-top: 50px;
 }
 
 /* table css */
 
-h3 {
+/* h3 {
     font-family: BerkeleyStd;
     font-size: 24px;
     font-weight: normal;
@@ -163,7 +241,7 @@ h3 {
     letter-spacing: 0.5px;
     color: #022737;
     display: inline;
-}
+} */
 
 .rectangle-dark {
     width: 965px;
@@ -244,31 +322,10 @@ h3 {
 }
 
 /* footer */
-.footer-elements{
-    background-color: #022737;
-    width: 100%;
-    height: 40%;
-    display: flex;
-    padding-left: 10%;
-    padding-right: 20%;
-}
-
-.footer-2nd{
-    display: flex;
-    padding-left: 10%;
-    padding-right: 20%;
-    justify-content: space-around;
-}
-
-.footer-elements div:nth-child(3){
-    padding-right: 20%;
-}
 
 
 
-/* Turn off parallax scrolling for tablets and phones */
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .top-text {
         border-radius: 10px;
         margin-left: 22px;
@@ -280,61 +337,103 @@ h3 {
     .need-assistance {
         display: none;
     }
+
+    .rectangle-top-container {
+        margin-left: 22px;
+    }
+
+    .Vanguard-Charitable {
+        width: 132px;
+        height: 20px;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+      }
+
     .main-container {
         margin-left: 4%;
         margin-right: 4%;
     }
+
+    .Lorem-ipsum-dolor-si {
+        width: 315px;
+        height: 200px;
+        font-family: HelveticaNeue;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #505050;
+      }
+    
+    /* table css */
     .table-column-names {
         display: none;
     }
     .rectangle-dark {
+        padding-top: 2%;
         width: 315px;
         height: 190px;
         background-color: #f4f3f3;
-    }
-    .rectangle-light {
-        width: 315px;
-        height: 190px;
-        align-items: center;
-    }
-    .fund-number {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
-
+    .rectangle-light {
+        padding-top: 2%;
+        width: 315px;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .investment-options {
+        color: #006778;
+        display: inline;
+    }
+    .text-field-table {
+        margin-top: 12px;
+        width: 40%;
+        height: 40px;
+        float: left;
+        border: solid 1px #bfbfbf;
+        background-color: #ffffff;
+    }
+    /* button container */
     .btn-container {
         margin-top: 10%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;        
+        align-items: center;
     }
-
     .save-btn {
         width: 100%;
         height: 50px;
         float: none;
         margin-top: 3%;
     }
-
     .cancel-btn {
         width: 100%;
         height: 50px;
-    }    
-
+    }
     /* footer */
-    .footer-elements{
+    .footer-elements {
         background-color: #022737;
         width: 100%;
         height: 90%;
         padding-left: 10%;
         display: flex;
         flex-direction: column;
-        align-items: center;  
+        align-items: center;
     }
-    
-    .footer-elements div:nth-child(3){
+    .footer-elements div:nth-child(3) {
         padding-right: 0%;
     }
-    
 }

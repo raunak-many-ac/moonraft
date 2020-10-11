@@ -1,18 +1,18 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>W3.CSS Template</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel = "stylesheet" href= "./css/footer.css">
 </head>
-
-
-<header></header>
 
 <body>
     <div class="top-bar">
         <div class="top-bar-container">
-            <span class="need-assistance">need assistance?</span>
+            <span class="need-assistance">Need assistance?</span>
             <input type="text" id="lname" name="lname" class="top-text">
+
             <svg class="top-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px"
                 height="24px">
                 <path d="M0 0h24v24H0V0z" fill="none" />
@@ -26,19 +26,19 @@
                 <path
                     d="M20.84 4.22c-.05-.12-.11-.23-.18-.34-.14-.21-.33-.4-.54-.54-.11-.07-.22-.13-.34-.18-.24-.1-.5-.16-.78-.16h-1V1h-2v2H8V1H6v2H5c-.42 0-.8.13-1.12.34-.21.14-.4.33-.54.54-.07.11-.13.22-.18.34-.1.24-.16.5-.16.78v14c0 1.1.89 2 2 2h14c.28 0 .54-.06.78-.16.12-.05.23-.11.34-.18.21-.14.4-.33.54-.54.21-.32.34-.71.34-1.12V5c0-.28-.06-.54-.16-.78zM5 19V5h14v14H5zm7-6.12c-2.03 0-6 1.08-6 3.58V18h12v-1.53c0-2.51-3.97-3.59-6-3.59zM8.31 16c.69-.56 2.38-1.12 3.69-1.12s3.01.56 3.69 1.12H8.31zM12 12c1.65 0 3-1.35 3-3s-1.35-3-3-3-3 1.35-3 3 1.35 3 3 3zm0-4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z" />
             </svg>
+
         </div>
 
     </div>
 
-    <nav class="main-container">
-
-        <img src="logo.png" alt="Girl in a jacket" width="143" height="60">
+    <nav>
+        <img src="assets/logo.png" width="143" height="60">
         <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Feedback</li>
         </ul>
     </nav>
 
@@ -46,48 +46,51 @@
         <div class="rectangle-top-container">
             <span>Welcome to our beta online experience. You can leave the test at any time and return to the previous
                 version of</span>
-            <span class="blue-text">Vanguard Charitable.</span>
+            <span class="blue-text"><a href="#">Vanguard Charitable.</a></span>
         </div>
     </div>
+    
+    <div class="Line"></div>
 
     <!-- main container -->
     <div class="main-container">
         <br>
         <br>
         <span class="normal-text">Home > My Profile > My Presets > New Contribution Preset</span>
-        <br>
-        <br>
-        <h1>Add a New Contribution Preset</h1>
-        <br>
-        <br>
-        <br>
-        <div class="fund-number">
-            <div class="normal-text">The Church Fund</div>
-            <div class="bold-text">A105019</div>
 
+        <h1>Add a New Contribution Preset</h1>
+
+        <div class="fund-number">
+            <div class="The-Church-Fund">The Church Fund</div>
+            <div class="A1050919">A105019</div>
         </div>
         <br>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+
+        <p class="Lorem-ipsum-dolor-si">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
             magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</p>
-        <hr>
-        <br>
+            laborum.
+        </p>
 
-        <h3>Preset Allocation</h3>
-        <br>
+        <hr>
+
+
+        <h3 class="Preset-Allocation">Preset Allocation</h3>
         <div class="normal-text">Preset Name</div>
         <input class="preset-name" placeholder="Enter Your Name Here">
-        <br>
-        <br>
+
+
         <hr>
         <div class="table-column-names">
             <div style="margin-left: 20px;">Investment Options</div>
-            <div>Available Balance</div>
-            <div>Price per Unit</div>
+            <div>Available Balance<p>as of 10/29/2018</p>
+            </div>
+            <div>Price per Unit<p>as of 10/29/2018</p>
+            </div>
             <div>Percentage</div>
         </div>
 
@@ -121,41 +124,48 @@
         <br>
         <hr>
         <div class="btn-container">
-            <button type="button" onClick="f()" class="cancel-btn"><span class="blue-text">CANCEL</span></button>
-            <button type="button" onClick="f()" class="save-btn"><span class="white-text">SAVE</span></button>
+            <button type="button" class="cancel-btn"><span class="blue-text">CANCEL</span></button>
+            <button type="button" class="save-btn"><span class="white-text">SAVE</span></button>
 
         </div>
     </div>
     <br>
     <br>
     <br>
-    
+
     <!-- Footer -->
     <footer class="footer-elements">
         <div>
-            <img src="logo.png" alt="Girl in a jacket" width="143" height="60">
-            <p>© 2018 Vanguard Charitable Endowment Program</p>
+            <img src="assets/logo_white.png" width="143" height="60" class= "white-logo">
+            <div class = "footer-icons">
+                <img src="assets/facebook.svg" width = "32px" height = "32px" >  
+                <img src="assets/facebook.svg" width = "32px" height = "32px" class = "social-media-icons">   
+                <img src="assets/facebook.svg" width = "32px" height = "32px" class = "social-media-icons">   
+                <img src="assets/facebook.svg" width = "32px" height = "32px" class = "social-media-icons">   
+                <img src="assets/facebook.svg" width = "32px" height = "32px" class = "social-media-icons">                   
+            </div>
+            <p class= "Vanguard-Char">© 2018 Vanguard Charitable Endowment Program</p>
         </div>
 
-        <div class= "footer-2nd">
-            <div>
-                <p>About Us</p>
-                <p>Career Opportunities</p>
-                <p>Legal disclosure</p>
-                <p>Policies and guidelines</p>
-                <p>User agreement</p>
+        <div class="footer-2nd">
+            <div class = "column">
+                <a class="footer-text-normal">About Us<a>
+                <a class="footer-text-normal">Career Opportunities</a>
+                <a class="footer-text-normal">Legal disclosure</a>
+                <a class="footer-text-normal">Policies and guidelines</a>
+                <a class="footer-text-normal">User agreement</a>
             </div>
-            <div>
-                <p>About Us</p>
-                <p>Career Opportunities</p>
-                <p>Legal disclosure</p>
-                <p>Policies and guidelines</p>
-                <p>User agreement</p>
+            <div class = "column">
+                <a class="footer-text-normal">Contact Us</a>
+                <a class="footer-text-normal">Forms</a>
+                <a class="footer-text-normal">Privacy Policy</a>
+                <a class="footer-text-normal">Terms and Conditions</a>
+                <a class="footer-text-normal">Company Policies</a>
             </div>
         </div>
 
         <div>
-            <p>Subscribe to our news letter</p>
+            <p class = "Subscribe-to-our-New">Subscribe to our news letter</p>
             <input class="preset-name" placeholder="Enter Your Name Here">
         </div>
     </footer>
