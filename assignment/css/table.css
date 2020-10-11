@@ -1,0 +1,63 @@
+.table-heading-text{
+        font-family: Berkeley;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        /* margin-bottom: 20px; */
+        /* letter-spacing: 0.5px;*/
+        padding-bottom: 10px; 
+        padding-left: 29px;
+        line-height: 80px;
+        color: #022737;
+        display: inline;
+    }
+    
+    .rectangle-dark {
+        width: 965px;
+        height: 60px;
+        background-color: #f4f3f3;
+        align-items: center;
+        display: flex;
+    }
+    
+    .investment-options {
+        color: #006778;
+        margin-left: 3%;
+        width: 25%;
+        font-family: Helvetica;
+    }
+    
+    .available-balance {
+        text-align: center;
+        width: 25%;
+        font-family: Helvetica;
+    }
+    
+    .price-per-unit {
+        text-align: center;
+        width: 25%;
+        font-family: Helvetica;
+    }
+    
+    .rectangle-light {
+        width: 965px;
+        height: 60px;
+        align-items: center;
+        display: flex;
+    }
+    
+    .text-field-table {
+        margin-top: 12px;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        width: 100px;
+        height: 40px;
+        border: solid 1px #bfbfbf;
+        background-color: #ffffff;
+        width: 10%;
+    }
+    
+    .column-name-mobile-price{
+        display: none;
+    }
