@@ -44,6 +44,7 @@ h1 {
     line-height: 1.5;
     letter-spacing: normal;
     color: #505050;
+    white-space:nowrap;
 }
 
 .Lorem-ipsum-dolor-si {

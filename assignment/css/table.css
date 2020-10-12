@@ -90,11 +90,20 @@
 
 .column-name-mobile-price {
         display: none;
+        
 }
 
 @media only screen and (max-width: 767px) {
         .table-column-names {
                 display: none;
+        }
+
+        .table-heading-text {
+                padding-bottom: 10px;
+                padding-left: 0px;
+                line-height: 80px;
+                color: #022737;
+                display: inline;
         }
 
         .rectangle-dark-web {
@@ -156,8 +165,7 @@
                 display: inline;
                 font-family: Helvetica;
                 margin-left: 20px;
-                
-
+                /* margin-top: 10px; */
         }
 
         .input_field_div{
@@ -188,7 +196,7 @@
                 font-weight: normal;
                 font-stretch: normal;
                 font-style: normal;
-                line-height: 20px;
+                line-height: 1.5;
                 letter-spacing: normal;
                 color: #505050;
         }

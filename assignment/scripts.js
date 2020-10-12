@@ -117,6 +117,16 @@ function populate_valueDrivenInvestments() {
                 val_drvn_invst.appendChild(newdiv_mobile);
         }
 
+        
+        newdiv = getTotalOfAll();
+        val_drvn_invst.appendChild(newdiv);
+
+        newdiv = getTotalofAll_Mobile();
+        val_drvn_invst.appendChild(newdiv);
+}
+
+//..summary of all the table data for web view
+function getTotalOfAll(){
         var newdiv = document.createElement('div');
         var invest_opt_div = document.createElement('div');
         invest_opt_div.innerText = "Total:";
@@ -131,18 +141,52 @@ function populate_valueDrivenInvestments() {
         var prc_per_unit = document.createElement('div');
         prc_per_unit.innerText = "100%";
         prc_per_unit.className = "bold-text";
-        prc_per_unit.style.marginRight = "4%";
+        prc_per_unit.style.marginRight = "2%";
+        var as_off_100 = document.createElement('div');
+        as_off_100.innerHTML = "as  100%";
+        as_off_100.className = "normal-text";
+        prc_per_unit.appendChild(as_off_100);
 
         newdiv.appendChild(invest_opt_div);
         newdiv.appendChild(avail_bal);
         newdiv.appendChild(prc_per_unit);
 
         newdiv.className = "rectangle-light-web";
+        return newdiv;
+}
 
-        val_drvn_invst.appendChild(newdiv);
+//..summary of all the table data for mobile view
+function getTotalofAll_Mobile(){
+        var newdiv = document.createElement('div');
+        var invest_opt_div = document.createElement('div');
+        invest_opt_div.innerText = "Total:";
+        invest_opt_div.className = "normal-text";
+        invest_opt_div.style.marginLeft = "3%";
+
+        var avail_bal = document.createElement('div');
+        avail_bal.innerText = "Clear All";
+        avail_bal.className = "investment-options";
+        avail_bal.style.marginRight = "15%";
+        avail_bal.style.cssFloat = "right";
+
+        var prc_per_unit = document.createElement('div');
+        prc_per_unit.innerText = "100%";
+        prc_per_unit.className = "bold-text";
+        var as_off_100 = document.createElement('div');
+        as_off_100.innerHTML = "as  100%";
+        as_off_100.className = "normal-text";
+        prc_per_unit.appendChild(as_off_100);
+
+        newdiv.appendChild(invest_opt_div);
+        newdiv.appendChild(avail_bal);
+        newdiv.appendChild(prc_per_unit);
+
+        newdiv.className = "rectangle-light-mobile";
+        return newdiv;        
 }
 
 //..table row generator
+//..visible on web view
 function generateRow(json, i) {
         var newdiv = document.createElement('div');
 
@@ -177,6 +221,8 @@ function generateRow(json, i) {
         return newdiv;
 }
 
+//..table row generator for mobile view
+//..visible on mobile view
 function generateMobileRow(json, i){
 
         var newdiv = document.createElement('div');
@@ -234,3 +280,7 @@ function generateMobileRow(json, i){
 
         return newdiv;
 }
+
+
+
+
