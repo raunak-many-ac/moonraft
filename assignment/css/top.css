@@ -95,6 +95,10 @@ nav ul li {
         background-color: #006778;
 }
 
+.hamburger{
+        display: none;
+}
+
 a {
         width: 122px;
         height: 16px;
@@ -166,5 +170,19 @@ span {
                 width: 236px;
                 vertical-align: middle;
         }
+
+        .nav{
+                display: flex;
+                flex-direction: row;
+        }
+
+        .hamburger{
+                visibility: visible;
+                display: inline;
+                margin-left: 170px;
+                /* background-color: #006778; */
+                /* align-items: center; */
+        }
+
 
 }
