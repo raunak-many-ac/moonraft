@@ -88,22 +88,25 @@
 .feedback-form {
         margin-top: 10px;
         margin-bottom: 49px;
-        width: 316px;
+        width: 276px;
         height: 40px;
         border: solid 1px #bfbfbf;
         background-color: #ffffff;
         padding-left: 20px;
 }
 
-.feedback-button {
-        /* padding-top: 0px; */
+.feedback {
+        display: flex;
+        align-items: row;
+    }
+    
+    .feedback-button {
+        padding-top: 0px;
         padding-left: 0px;
-        /* margin-top: 10px; */
-        /* margin-bottom: 49px; */
+        margin-top: 11px;
         border: solid 1px #bfbfbf;
         background-color: #ffffff;
-        /* padding-left: 20px; */
-}
+    }
 
 .copyright-footer {
         background-color: #f5f5f5;
