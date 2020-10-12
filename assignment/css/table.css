@@ -25,14 +25,6 @@
         display: inline;
 }
 
-.rectangle-dark {
-        width: 1000px;
-        height: 60px;
-        background-color: #f4f3f3;
-        align-items: center;
-        display: flex;
-}
-
 .investment-options {
         color: #006778;
         margin-left: 3%;
@@ -53,11 +45,28 @@
         font-family: Helvetica;
 }
 
-.rectangle-light {
+.rectangle-dark-web {
+        width: 1000px;
+        height: 60px;
+        background-color: #f4f3f3;
+        align-items: center;
+        display: flex;
+}
+
+.rectangle-dark-mobile{
+        background-color: #f4f3f3;
+        display: none; 
+}
+
+.rectangle-light-web {
         width: 1000px;
         height: 60px;
         align-items: center;
         display: flex;
+}
+
+.rectangle-light-mobile{
+        display: none;                
 }
 
 .input_field_div{
@@ -88,31 +97,66 @@
                 display: none;
         }
 
-        .rectangle-dark {
+        .rectangle-dark-web {
                 padding-top: 2%;
                 width: 315px;
                 height: 190px;
                 background-color: #f4f3f3;
                 display: block;
                 flex-direction: column;
-                
+                display: none;
                 justify-content: space-between;
         }
 
-        .rectangle-light {
+        .rectangle-light-web {
                 padding-top: 2%;
                 width: 315px;
                 height: 190px;
                 display: block;
+                display: none;
                 flex-direction: column;
                 justify-content: space-between;
         }
+
+        .rectangle-light-mobile{
+                padding-top: 2%;
+                width: 315px;
+                height: 190px;
+                display: block;
+        }
+
+        .rectangle-dark-mobile{
+                padding-top: 2%;
+                width: 315px;
+                height: 190px;
+                display: block;
+        }
+
+        .available-balance {
+                color: #022737;
+                font-weight: bolder;
+        }
+        
+        .price-per-unit {
+                color: #022737;
+                font-weight: bolder;
+        }
+
+        
+        .cost{
+                margin-top: 20px;
+                margin-left: 20px;
+                display: flex;
+                flex-direction: row;
+        }
+        
 
         .investment-options {
                 width: auto;
                 display: inline;
                 font-family: Helvetica;
                 margin-left: 20px;
+                
 
         }
 

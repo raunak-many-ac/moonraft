@@ -84,87 +84,24 @@ function populate_Portfolio() {
 
         console.log("populate_Portfolio()");
         for (var i = 0; i < portfolio_solutions.length; i++) {
-                var newdiv = document.createElement('div');
-
-
-                var invest_opt_div = document.createElement('div');
-                invest_opt_div.innerText = portfolio_solutions[i].investment_options;
-                invest_opt_div.className = "investment-options";
-
-                var avail_bal = document.createElement('div');
-                avail_bal.innerText = portfolio_solutions[i].available_balance;
-                avail_bal.className = "available-balance";
-
-                var prc_per_unit = document.createElement('div');
-                prc_per_unit.innerText = portfolio_solutions[i].price_per_unit;
-                prc_per_unit.className = "price-per-unit"
-
-                var input_field_div = document.createElement('div');
-                input_field_div.className = "input_field_div";
-
-                var percentage_text = document.createElement('div');
-                percentage_text.innerText = "Percentage";
-                percentage_text.className = "column-name-mobile-price";
-
-                var input_field = document.createElement('input');
-                input_field.className = "input_field";
-
-                input_field_div.appendChild(percentage_text);
-                input_field_div.appendChild(input_field);
-
-                newdiv.appendChild(invest_opt_div);
-                newdiv.appendChild(avail_bal);
-                newdiv.appendChild(prc_per_unit);
-                newdiv.appendChild(input_field_div);
-
-                if (i % 2 == 0) newdiv.className = "rectangle-dark";
-                else newdiv.className = "rectangle-light";
+                var newdiv = generateRow(portfolio_solutions, i);
+                var newdiv_mobile = generateMobileRow(portfolio_solutions, i);
 
                 portfolio.appendChild(newdiv);
+                portfolio.appendChild(newdiv_mobile);
         }
 }
+
 
 function populate_potfolio_builder() {
 
         console.log("populate_potfolio_builder()");
-        for (var i = 0; i < portfolio_builder.length; i++) {
-                var newdiv = document.createElement('div');
-
-
-                var invest_opt_div = document.createElement('div');
-                invest_opt_div.innerText = portfolio_builder[i].investment_options;
-                invest_opt_div.className = "investment-options";
-
-                var avail_bal = document.createElement('div');
-                avail_bal.innerText = portfolio_builder[i].available_balance;
-                avail_bal.className = "available-balance";
-
-                var prc_per_unit = document.createElement('div');
-                prc_per_unit.innerText = portfolio_builder[i].price_per_unit;
-                prc_per_unit.className = "price-per-unit"
-
-                var input_field_div = document.createElement('div');
-                input_field_div.className = "input_field_div";
-
-                var percentage_text = document.createElement('div');
-                percentage_text.innerText = "Percentage";
-                percentage_text.className = "column-name-mobile-price";
-
-                var input_field = document.createElement('input');
-                input_field.className = "input_field";
-
-                input_field_div.appendChild(percentage_text);
-                input_field_div.appendChild(input_field);
-
-                newdiv.appendChild(invest_opt_div);
-                newdiv.appendChild(avail_bal);
-                newdiv.appendChild(prc_per_unit);
-                newdiv.appendChild(input_field_div);
-
-                if (i % 2 == 0) newdiv.className = "rectangle-dark";
-                else newdiv.className = "rectangle-light";
+        for (var i = 0; i < portfolio_builder.length; i++) {                
+                var newdiv = generateRow(portfolio_builder, i);
+                var newdiv_mobile = generateMobileRow(portfolio_builder, i);
 
                 portfolio_bldr.appendChild(newdiv);
+                portfolio_bldr.appendChild(newdiv_mobile);
         }
 }
 
@@ -173,43 +110,11 @@ function populate_valueDrivenInvestments() {
 
         console.log("populate_valueDrivenInvestments()");
         for (var i = 0; i < value_driven_investments.length; i++) {
-                var newdiv = document.createElement('div');
-
-
-                var invest_opt_div = document.createElement('div');
-                invest_opt_div.innerText = value_driven_investments[i].investment_options;
-                invest_opt_div.className = "investment-options";
-
-                var avail_bal = document.createElement('div');
-                avail_bal.innerText = value_driven_investments[i].available_balance;
-                avail_bal.className = "available-balance";
-
-                var prc_per_unit = document.createElement('div');
-                prc_per_unit.innerText = value_driven_investments[i].price_per_unit;
-                prc_per_unit.className = "price-per-unit"
-
-                var input_field_div = document.createElement('div');
-                input_field_div.className = "input_field_div";
-
-                var percentage_text = document.createElement('div');
-                percentage_text.innerText = "Percentage";
-                percentage_text.className = "column-name-mobile-price";
-
-                var input_field = document.createElement('input');
-                input_field.className = "input_field";
-
-                input_field_div.appendChild(percentage_text);
-                input_field_div.appendChild(input_field);
-
-                newdiv.appendChild(invest_opt_div);
-                newdiv.appendChild(avail_bal);
-                newdiv.appendChild(prc_per_unit);
-                newdiv.appendChild(input_field_div);
-
-                if (i % 2 == 0) newdiv.className = "rectangle-dark";
-                else newdiv.className = "rectangle-light";
+                var newdiv = generateRow(value_driven_investments, i);
+                var newdiv_mobile = generateMobileRow(value_driven_investments, i);
 
                 val_drvn_invst.appendChild(newdiv);
+                val_drvn_invst.appendChild(newdiv_mobile);
         }
 
         var newdiv = document.createElement('div');
@@ -232,7 +137,100 @@ function populate_valueDrivenInvestments() {
         newdiv.appendChild(avail_bal);
         newdiv.appendChild(prc_per_unit);
 
-        newdiv.className = "rectangle-light";
+        newdiv.className = "rectangle-light-web";
 
         val_drvn_invst.appendChild(newdiv);
+}
+
+//..table row generator
+function generateRow(json, i) {
+        var newdiv = document.createElement('div');
+
+        var invest_opt_div = document.createElement('div');
+        invest_opt_div.innerText = json[i].investment_options;
+        invest_opt_div.className = "investment-options";
+
+        var avail_bal = document.createElement('div');
+        avail_bal.innerText = json[i].available_balance;
+        avail_bal.className = "available-balance";
+
+        var prc_per_unit = document.createElement('div');
+        prc_per_unit.innerText = json[i].price_per_unit;
+        prc_per_unit.className = "price-per-unit"
+
+        var input_field_div = document.createElement('div');
+        input_field_div.className = "input_field_div";
+
+        var input_field = document.createElement('input');
+        input_field.className = "input_field";
+
+        input_field_div.appendChild(input_field);
+
+        newdiv.appendChild(invest_opt_div);
+        newdiv.appendChild(avail_bal);
+        newdiv.appendChild(prc_per_unit);
+        newdiv.appendChild(input_field_div);
+
+        if (i % 2 == 0) newdiv.className = "rectangle-dark-web";
+        else newdiv.className = "rectangle-light-web";
+
+        return newdiv;
+}
+
+function generateMobileRow(json, i){
+
+        var newdiv = document.createElement('div');
+
+        var invest_opt_div = document.createElement('div');
+        invest_opt_div.innerText = json[i].investment_options;
+        invest_opt_div.className = "investment-options";
+
+        var cost = document.createElement('div');
+        cost.className = "cost";
+
+        var avail_bal_span = document.createElement('span');
+        var avail_bal_text = document.createElement('p');
+        avail_bal_text.innerHTML = "Available Balance";
+        avail_bal_text.className = "column-name-mobile-price";
+        var avail_bal = document.createElement('p');
+        avail_bal.innerText = json[i].available_balance;
+        avail_bal.className = "available-balance";
+        avail_bal_span.appendChild(avail_bal_text);     
+        avail_bal_span.appendChild(avail_bal);
+        
+
+        var prc_per_unit_span = document.createElement('span');
+        var prc_per_unit = document.createElement('p');
+        var prc_per_unit_text = document.createElement('p');
+        prc_per_unit_text.innerHTML = "Price per Unit";
+        prc_per_unit_text.className = "column-name-mobile-price";
+        prc_per_unit.innerText = json[i].price_per_unit;
+        prc_per_unit.className = "price-per-unit";
+        prc_per_unit_span.appendChild(prc_per_unit_text);
+        prc_per_unit_span.appendChild(prc_per_unit);
+
+        cost.appendChild(avail_bal_span);
+        cost.appendChild(prc_per_unit_span);
+
+        var input_field_div = document.createElement('div');
+        input_field_div.className = "input_field_div";
+
+        var percentage_text = document.createElement('div');
+        percentage_text.innerText = "Percentage";
+        percentage_text.className = "column-name-mobile-price";
+
+        var input_field = document.createElement('input');
+        input_field.className = "input_field";
+
+        input_field_div.appendChild(percentage_text);
+        input_field_div.appendChild(input_field);
+
+        newdiv.appendChild(invest_opt_div);
+        newdiv.appendChild(cost);
+        newdiv.appendChild(input_field_div);
+
+        if (i % 2 == 0) newdiv.className = "rectangle-dark-mobile";
+        else newdiv.className = "rectangle-light-mobile";
+
+        return newdiv;
 }
