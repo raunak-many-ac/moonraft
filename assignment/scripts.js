@@ -119,7 +119,7 @@ function populate_Portfolio() {
 function populate_potfolio_builder() {
 
         console.log("populate_potfolio_builder()");
-        for (var i = 0; i < portfolio_builder.length; i++) {                
+        for (var i = 0; i < portfolio_builder.length; i++) {
                 var newdiv = generateRow(portfolio_builder, i);
                 var newdiv_mobile = generateMobileRow(portfolio_builder, i);
 
@@ -140,7 +140,7 @@ function populate_valueDrivenInvestments() {
                 val_drvn_invst.appendChild(newdiv_mobile);
         }
 
-        
+
         newdiv = getTotalOfAll();
         val_drvn_invst.appendChild(newdiv);
 
@@ -149,7 +149,7 @@ function populate_valueDrivenInvestments() {
 }
 
 //..summary of all the table data for web view
-function getTotalOfAll(){
+function getTotalOfAll() {
         var newdiv = document.createElement('div');
         var invest_opt_div = document.createElement('div');
         invest_opt_div.innerText = "Total:";
@@ -179,7 +179,7 @@ function getTotalOfAll(){
 }
 
 //..summary of all the table data for mobile view
-function getTotalofAll_Mobile(){
+function getTotalofAll_Mobile() {
         var newdiv = document.createElement('div');
         var invest_opt_div = document.createElement('div');
         invest_opt_div.innerText = "Total:";
@@ -205,7 +205,7 @@ function getTotalofAll_Mobile(){
         newdiv.appendChild(prc_per_unit);
 
         newdiv.className = "rectangle-light-mobile";
-        return newdiv;        
+        return newdiv;
 }
 
 //..table row generator
@@ -225,9 +225,13 @@ function generateRow(json, i) {
         prc_per_unit.innerText = json[i].price_per_unit;
         prc_per_unit.className = "price-per-unit"
         var arrow = document.createElement('img');
-        arrow.src = "assets/down-arrow.svg";
-        arrow.width = "100px";
-        arrow.height = "100px";
+        if (json[i].arrowUp)
+                arrow.src = "assets/up-arrow.svg";
+        else
+                arrow.src = "assets/down-arrow.svg";
+        // arrow.width = "100px";
+        // arrow.height = "100px";
+        arrow.className = "price-arrow";
         prc_per_unit.appendChild(arrow);
 
         var input_field_div = document.createElement('div');
@@ -251,7 +255,7 @@ function generateRow(json, i) {
 
 //..table row generator for mobile view
 //..visible on mobile view
-function generateMobileRow(json, i){
+function generateMobileRow(json, i) {
 
         var newdiv = document.createElement('div');
 
@@ -269,9 +273,9 @@ function generateMobileRow(json, i){
         var avail_bal = document.createElement('p');
         avail_bal.innerText = json[i].available_balance;
         avail_bal.className = "available-balance";
-        avail_bal_span.appendChild(avail_bal_text);     
+        avail_bal_span.appendChild(avail_bal_text);
         avail_bal_span.appendChild(avail_bal);
-        
+
 
         var prc_per_unit_span = document.createElement('span');
         var prc_per_unit = document.createElement('p');

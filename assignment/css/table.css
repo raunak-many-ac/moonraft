@@ -45,6 +45,13 @@
         font-family: Helvetica;
 }
 
+.price-arrow{
+        width: 14px;
+        height: 14px;
+        text-align: center;
+        margin-left: 20px;
+}
+
 .rectangle-dark-web {
         width: 1000px;
         height: 60px;
