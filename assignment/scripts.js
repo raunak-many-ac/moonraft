@@ -1,74 +1,97 @@
 const portfolio_solutions = [{
         investment_options: "Conservative growth",
         available_balance: "$1,115,125.35",
-        price_per_unit: "$23.2"
+        price_per_unit: "$23.2",
+        arrowUp: true
 },
 {
         investment_options: "Moderate growth",
         available_balance: "$1,115,125.35",
-        price_per_unit: "$23.2"
+        price_per_unit: "$23.2",
+        arrowUp: true
 },
 {
         investment_options: "Gift Preservation",
         available_balance: "$1,115,125.35",
-        price_per_unit: "$23.2"
+        price_per_unit: "$23.2",
+        arrowUp: false
 },
 {
         investment_options: "Growth",
         available_balance: "$1,115,125.35",
-        price_per_unit: "$23.2"
+        price_per_unit: "$23.2",
+        arrowUp: true
 }];
 
 const portfolio_builder = [{
         investment_options: "Money Market",
         available_balance: "_",
-        price_per_unit: "$23.2"
+        price_per_unit: "$23.2",
+        arrowUp: true
+
 },
 {
         investment_options: "Short term bond",
         available_balance: "$142,456,32",
-        price_per_unit: "$45.8"
+        price_per_unit: "$45.8",
+        arrowUp: true
+
 },
 {
         investment_options: "Total Bond",
         available_balance: "$123,456,23",
-        price_per_unit: "$10.5"
+        price_per_unit: "$10.5",
+        arrowUp: false
+
 },
 {
         investment_options: "Total International Bond",
         available_balance: "$324,564,23",
-        price_per_unit: "$10.5"
+        price_per_unit: "$10.5",
+        arrowUp: true
+
 },
 {
         investment_options: "Total Equity",
         available_balance: "_",
-        price_per_unit: "$10.5"
+        price_per_unit: "$10.5",
+        arrowUp: true
+
 },
 {
         investment_options: "Total U.S. Stock",
         available_balance: "_",
-        price_per_unit: "$10.5"
+        price_per_unit: "$10.5",
+        arrowUp: true
+
 },
 {
         investment_options: "Total International Stock",
         available_balance: "_",
-        price_per_unit: "$10.5"
+        price_per_unit: "$10.5",
+        arrowUp: true
+
 }];
 
 const value_driven_investments = [{
         investment_options: "E.S.G US Stock",
         available_balance: "_",
-        price_per_unit: "$23.2"
+        price_per_unit: "$23.2",
+        arrowUp: true
+
 },
 {
         investment_options: "E.S.G Internal Stock",
         available_balance: "_",
-        price_per_unit: "$45.8"
+        price_per_unit: "$45.8",
+        arrowUp: false
+
 },
 {
         investment_options: "E.S.G Global Stock",
         available_balance: "_",
-        price_per_unit: "$10.5"
+        price_per_unit: "$10.5",
+        arrowUp: true
 }];
 
 var portfolio = document.getElementById("portfolio");
@@ -201,6 +224,11 @@ function generateRow(json, i) {
         var prc_per_unit = document.createElement('div');
         prc_per_unit.innerText = json[i].price_per_unit;
         prc_per_unit.className = "price-per-unit"
+        var arrow = document.createElement('img');
+        arrow.src = "assets/down-arrow.svg";
+        arrow.width = "100px";
+        arrow.height = "100px";
+        prc_per_unit.appendChild(arrow);
 
         var input_field_div = document.createElement('div');
         input_field_div.className = "input_field_div";
