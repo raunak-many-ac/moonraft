@@ -270,7 +270,7 @@ function generateMobileRow(json, i) {
         var avail_bal_text = document.createElement('p');
         avail_bal_text.innerHTML = "Available Balance";
         avail_bal_text.className = "column-name-mobile-price";
-        var avail_bal = document.createElement('p');
+        var avail_bal = document.createElement('div');
         avail_bal.innerText = json[i].available_balance;
         avail_bal.className = "available-balance";
         avail_bal_span.appendChild(avail_bal_text);
@@ -278,17 +278,21 @@ function generateMobileRow(json, i) {
 
 
         var prc_per_unit_span = document.createElement('span');
-        var prc_per_unit = document.createElement('p');
+        var prc_per_unit = document.createElement('div');
         var prc_per_unit_text = document.createElement('p');
         prc_per_unit_text.innerHTML = "Price per Unit";
         prc_per_unit_text.className = "column-name-mobile-price";
         prc_per_unit.innerText = json[i].price_per_unit;
-        prc_per_unit.className = "price-per-unit";
+        prc_per_unit.className = "price-per-unit";     
+
         prc_per_unit_span.appendChild(prc_per_unit_text);
         prc_per_unit_span.appendChild(prc_per_unit);
 
         cost.appendChild(avail_bal_span);
         cost.appendChild(prc_per_unit_span);
+
+        var line = document.createElement('hr');
+        line.className = "card-line";
 
         var input_field_div = document.createElement('div');
         input_field_div.className = "input_field_div";
@@ -305,6 +309,7 @@ function generateMobileRow(json, i) {
 
         newdiv.appendChild(invest_opt_div);
         newdiv.appendChild(cost);
+        newdiv.appendChild(line);
         newdiv.appendChild(input_field_div);
 
         if (i % 2 == 0) newdiv.className = "rectangle-dark-mobile";

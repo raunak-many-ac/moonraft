@@ -140,7 +140,10 @@ span {
 }
 
 .rectangle-top-container {
-        margin-left: 10%;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
 }
 
 .Line {
@@ -154,12 +157,15 @@ span {
                 display: none;
         }
         .top-text {
-                /* border-radius: 10px;
-                margin-left: 22px;
-                padding-left: 20%; */
-                /* width: 1000px; */
                 vertical-align: middle;
+                font-size: 12px;
+                font-weight: bolder;
         }
+
+        .top-icons {
+                margin-left: 7px;
+        }
+
         .nav {
                 display: flex;
                 flex-direction: row;
@@ -167,8 +173,9 @@ span {
         .hamburger {
                 visibility: visible;
                 display: inline;
-                margin-left: 170px;
+                margin-left: 65px;
                 /* background-color: #006778; */
                 /* align-items: center; */
         }
 }
+

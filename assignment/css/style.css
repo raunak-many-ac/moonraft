@@ -9,6 +9,20 @@ html, body {
     margin-right: 20%;
 }
 
+.nav_path{
+    width: auto;
+    height: auto;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #505050;
+    /* white-space:nowrap; */
+}
+
 h1 {
     font-family: BerkleyStd;
     font-size: 42px;
@@ -238,4 +252,9 @@ p {
         width: 100%;
         height: 50px;
     }
+
+    .preset-name{
+        width: 300px;
+    }
 }
+
