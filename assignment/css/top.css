@@ -92,6 +92,10 @@ nav ul li {
         display: none;
 }
 
+.rectangle-top-container {
+        margin-left: 10%;
+}
+
 a {
         width: 122px;
         height: 16px;
@@ -139,12 +143,7 @@ span {
         margin-left: 2px;
 }
 
-.rectangle-top-container {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-}
+
 
 .Line {
         width: 100%;
@@ -176,6 +175,13 @@ span {
                 margin-left: 65px;
                 /* background-color: #006778; */
                 /* align-items: center; */
+        }
+
+        .rectangle-top-container {
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
         }
 }
 
